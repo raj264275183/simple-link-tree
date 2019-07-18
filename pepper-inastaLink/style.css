@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: white;
+    background-color: #9a1a66;
+    opacity: .96;
+    z-index: 23;
+    background-image: linear-gradient(-50deg, #432974 0, #fa3a7a 100%, #9a1a66 100%);
+    transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0 20px;
+    max-width: 100%;
+    text-align: center;
+    font-family: Oriono, Helvetica, Arial;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.main-logo {
+    width: 200px;
+    margin: 20px;
+}
+
+a {
+    display: block;
+    color: white;
+    border: 2px solid #ffffff;
+    margin: 0 auto 15px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: #9a1a66;
+    background-color: #ffffff;
+    -webkit-transition: background-color 333ms linear;
+    -ms-transition: background-color 333ms linear;
+    transition: background-color 333ms linear;
+
+}
+
+.footer-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    padding-top: 50px;
+}
+
+.footer-bar a {
+    border: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    a {
+        margin: 0 auto 15px auto;
+        padding: 10px 15px;
+    }
+}
